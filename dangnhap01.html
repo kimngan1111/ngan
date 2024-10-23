@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng Nhập</title>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+	
+	
+</head>
+<body>
+	<header>
+		<img id="header-img1" src="images/header-img1.png" alt="" >
+		<img id="header-img2" src="images/header-img2.png" alt="" >
+		<img id="header-img3" src="images/header-img3.png" alt="" >
+		<a id="#top" href="trangchu.html" ><img src="images/logo.png" alt=""></a>		
+		<nav>
+			<a href="trangchu.html">Trang Chủ</a>					
+			<a href="gioithieu.html">Giới Thiệu</a>
+			<a href="sanpham.html">Sản Phẩm</a>
+			<a href="tintuc.html">Tin Tức</a>
+			<a href="dangnhap.html">Đăng Nhập</a>
+			<a href="dangky.html">Đăng Ký</a>
+			<a href="lienhe.html">Liên Hệ</a>
+			<div class="search-container">
+				<form name="frm-search"method="get" action="timkiem.html">
+				<div class="input-container">					
+					<input class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="words" onkeypress="checkKeySearch(e)">
+					<i class="fa fa-search icon-white" onclick="doSearch()"></i>
+					<i onclick="openCart()"class="fa fa-shopping-cart icon-pink"></i>
+				</div>
+				</form>								
+			</div>				
+		</nav>
+	</header>
+	<main>		
+		<form onsubmit="return loginValidate(this);" action="#" method="post" style="max-width:500px;margin:auto" enctype="application/x-www-form-urlencoded">
+		  <h1>ĐĂNG NHẬP</h1>
+		  <img class="headline"src="images/dangnhap/userlogin.png" alt="Avatar" width=200>
+		  <div class="input-container">
+			<i class="fa fa-envelope icon-white"></i>
+			<input class="input-field" type="text" placeholder="Nhập email" name="email">
+		  </div>		  
+		  <div class="input-container">
+			<i class="fa fa-key icon-white"></i>
+			<input class="input-field" type="password" placeholder="Nhập mật khẩu" name="psw">
+		  </div>
+		  <span>Bạn quên <a href="#">Mật Khẩu?</a></span>
+						<span >
+					  <input type="checkbox" checked="checked" name="remember"> Ghi nhớ cho lần đăng nhập sau
+						</span >
+		  		<button type="submit" class="btn">Đăng Nhập</button>
+		  		<button type="reset" class="btn">Hủy</button>
+		</form>		
+	</main>
+	<footer>			
+		<p>&copy; 2023 Bản quyền thuộc về FreeezeVN. 
+			<a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+			<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+			<a href="#top" class="gotop"><img src="images/top.png" width="60"></a></p>
+	</footer>
+</body>
+</html>
