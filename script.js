@@ -111,7 +111,3 @@ lMins<=1020)))
 return 0.1;
 return 0;
 }
-var itemList={   
-    "sp001":{ 	"name":"Sữa Chua Vị Kiwi", 
- "price":21000, 
- "photo":"images/sanpham/kiwi.jpg"}, 
