@@ -1,0 +1,69 @@
+donhang.html
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Don Hang</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/vn.microsoft.icon">
+    <script src="script.js"></script>
+	<script>window.onload=function(){showCart();};</script>
+</head>
+<body>	
+	<header>
+		<img id="header-img1" src="images/header-img1.png" alt="" >
+		<img id="header-img2" src="images/header-img2.png" alt="" >
+		<img id="header-img3" src="images/header-img3.png" alt="" >
+		<a id="#top" href="trangchu.html" ><img src="images/logo.png" alt=""></a>		
+		<nav>
+			<a href="trangchu.html">Trang Chủ</a>					
+			<a href="gioithieu.html">Giới Thiệu</a>
+			<a href="sanpham.html">Sản Phẩm</a>
+			<a href="tintuc.html">Tin Tức</a>
+			<a href="dangnhap.html">Đăng Nhập</a>
+			<a href="dangky.html">Đăng Ký</a>
+			<a href="lienhe.html">Liên Hệ</a>
+			<div class="search-container">
+				<form name="frm-search"method="get" action="timkiem.html">
+				<div class="input-container">					
+					<input class="search-input" type="text" placeholder="Nhập nội dung cần tìm..." name="words" >
+					<i class="fa fa-search icon-white" onclick="doSearch()"></i>
+					<i onclick="openCart()" class="fa fa-shopping-cart icon-pink"></i>
+				</div>
+				</form>								
+			</div>			
+		</nav>
+	</header>
+	<main class="one-col">
+		<article class="main-content">
+            <h1>Chi Tiết Đơn Hàng</h1>
+            <table id="cartDetail" border=1 width="100px">
+                <thead>
+                    <tr>
+                        <th>Hình SP</th>
+                        <th>Tên SP</th>
+                        <th>Số Lượng</th>
+                        <th>Giá</th>
+                        <th>Thành Tiền</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot>
+                    <tr><td colspan="6" align="right">Tổng Thành Tiền (A)= <span id="bill_pre_tax_total"></span></td></tr>
+                    <tr><td colspan="6" align="right">Chiết Khấu (B)= <span id="bill_discount"></span></td></tr>
+                    <tr><td colspan="6" align="right">Thuế (C)= 10% x (A-B) <span id="bill_tax"></span></td></tr>
+                    <tr><td colspan="6" align="right">Tổng Đơn Hàng = A-B+C <span id="bill_total"></span></td></tr>
+                    <tr><td colspan="6" align="center"><button type="Xac Nhan Don Hang"></button></td></tr>
+                </tfoot>
+            </table>
+        </article>
+	</main>
+	<footer>			
+		<p>&copy; 2024 Bản quyền thuộc về FreeezeVN. 
+			<a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+			<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+			<a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+			<a href="#top" class="gotop"><img src="images/top.png" width="60"></a></p>
+	</footer>
+</body>
+</html>
